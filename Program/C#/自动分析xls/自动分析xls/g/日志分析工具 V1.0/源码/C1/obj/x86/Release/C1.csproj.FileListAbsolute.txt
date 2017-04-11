@@ -1,0 +1,6 @@
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Release\C1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Release\C1.Form1.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Release\C1.Form2.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Release\C1.Form3.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Release\C1.Properties.Resources.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Release\C1.csproj.GenerateResource.Cache

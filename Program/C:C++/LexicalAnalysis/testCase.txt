@@ -1,0 +1,30 @@
+#TestCase:
+
+1.const    count=10, sum = 81.5,char1= 'f' , max=169, str1="h*54	2..4S!AAsj",char2='@',   str="aa!+h";
+
+The result: 
+count(int, 10)
+sum(float, 81.5)
+char1(char, 'f')
+max(int, 169)
+str1(string, "h*54	2..4S!AAsj")
+char2(char, '@')
+str(string, "aa!+h")
+int_num: 2, float_num: 1, char_num: 2, string_num: 2
+
+
+2.Aconsttecount=10,sum=81.5,char1='f';
+
+It is not a constant declaration statement!
+Please input a string again!
+
+
+3.const count=10,12sum=81.5,char1='ff',max=0016;
+
+The result: 
+count(int, 10)
+12sum(ErrorCode:1. Wrong. The variable name must begin with a letter.)
+char1(ErrorCode:5. Wrong. The length of value over 1, type 'char' length is 1.)
+max(ErrorCode:8. Wrong. type 'int' not allow to start with 0.)
+int_num: 1, float_num: 0, char_num: 0, string_num: 0
+

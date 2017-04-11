@@ -1,0 +1,17 @@
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\C1.Form1.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\C1.Form2.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\C1.Form3.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\C1.Properties.Resources.resources
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\日志分析工具 V1.0.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\日志分析\C2\C1\bin\Debug\日志分析工具 V1.0.exe
+C:\Users\admin\Desktop\日志分析\C2\C1\bin\Debug\日志分析工具 V1.0.pdb
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\日志分析工具 V1.0.exe
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\日志分析工具 V1.0.pdb
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\日志分析工具 V1.0.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\日志分析\C2\C1\obj\x86\Debug\C1.Form4.resources
+C:\Users\admin\Desktop\日志分析工具 V1.0\源码\C2\C1\obj\x86\Debug\日志分析工具 V1.0.exe
+C:\Users\admin\Desktop\日志分析工具 V1.0\源码\C2\C1\obj\x86\Debug\日志分析工具 V1.0.pdb
+C:\Users\admin\Desktop\日志分析工具 V1.0\源码\C1\obj\x86\Debug\日志分析工具 V1.0.exe
+C:\Users\admin\Desktop\日志分析工具 V1.0\源码\C1\obj\x86\Debug\日志分析工具 V1.0.pdb
+E:\Temporary\407项目\Project\自动分析xls\g\日志分析工具 V1.0\源码\C1\obj\x86\Debug\日志分析工具 V1.0.exe
+E:\Temporary\407项目\Project\自动分析xls\g\日志分析工具 V1.0\源码\C1\obj\x86\Debug\日志分析工具 V1.0.pdb

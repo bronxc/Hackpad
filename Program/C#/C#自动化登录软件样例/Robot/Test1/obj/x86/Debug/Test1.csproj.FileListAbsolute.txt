@@ -1,0 +1,38 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\bin\Debug\Test1.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\bin\Debug\Test1.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\Test1.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\Test1.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\Test1.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\Test1\obj\x86\Debug\Test1.Form1.resources
+D:\VSProject\Test1\Test1\obj\x86\Debug\Test1.exe
+D:\VSProject\Test1\Test1\obj\x86\Debug\Test1.pdb
+D:\VSProject\Test1\Test1\bin\Debug\Test1.exe
+D:\VSProject\Test1\Test1\bin\Debug\Test1.pdb
+D:\VSProject\Test1\Test1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VSProject\Test1\Test1\obj\x86\Debug\Test1.Form1.resources
+D:\VSProject\Test1\Test1\obj\x86\Debug\Test1.Properties.Resources.resources
+D:\VSProject\Test1\Test1\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\VSProject\Test1\Test1\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\VSProject\Test1\Test1\bin\Debug\Test1.exe.config
+H:\VSProject\Test1\Test1\bin\Debug\Test1.exe.config
+H:\VSProject\Test1\Test1\obj\x86\Debug\Test1.exe
+H:\VSProject\Test1\Test1\obj\x86\Debug\Test1.pdb
+D:\VSProject\Robot\Test1\bin\Debug\Test1.exe.config
+D:\VSProject\Robot\Test1\obj\x86\Debug\Test1.exe
+D:\VSProject\Robot\Test1\obj\x86\Debug\Test1.pdb
+H:\VSProject\Test1\Test1\bin\Debug\Test1.exe
+H:\VSProject\Test1\Test1\bin\Debug\Test1.pdb
+H:\VSProject\Test1\Test1\obj\x86\Debug\Test1.Form1.resources
+H:\VSProject\Test1\Test1\obj\x86\Debug\Test1.Properties.Resources.resources
+H:\VSProject\Test1\Test1\obj\x86\Debug\Test1.csproj.GenerateResource.Cache
+E:\Computer\cDesign\C#\Robot\Test1\bin\Debug\Test1.exe.config
+E:\Computer\cDesign\C#\Robot\Test1\obj\x86\Debug\Test1.exe
+E:\Computer\cDesign\C#\Robot\Test1\obj\x86\Debug\Test1.pdb
+E:\Computer\cDesign\C#\Robot\Test1\bin\Debug\Test1.exe
+E:\Computer\cDesign\C#\Robot\Test1\bin\Debug\Test1.pdb
+E:\Computer\cDesign\C#\Robot\Test1\obj\x86\Debug\Test1.Form1.resources
+E:\Computer\cDesign\C#\Robot\Test1\obj\x86\Debug\Test1.Properties.Resources.resources
+E:\Computer\cDesign\C#\Robot\Test1\obj\x86\Debug\Test1.csproj.GenerateResource.Cache
