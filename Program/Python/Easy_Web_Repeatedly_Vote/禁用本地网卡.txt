@@ -1,1 +1,0 @@
-netsh interface set interface name="本地连接" admin=DISABLED
