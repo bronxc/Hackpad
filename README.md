@@ -4,7 +4,7 @@ There are my notes.
 
 Some contain personal information that has been deleted.  
 
-if you want to know more, you can contact me.  
+if you want to know more, contact me.  
 
 
 
