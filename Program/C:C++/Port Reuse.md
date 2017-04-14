@@ -13,7 +13,7 @@
 
 
 #### 2. 端口重用  
-端口重用是说去重用目前计算机上已经开启的端口，这些端口往往不受到防火墙的阻挡，从而可以实现木马的远程操控。连接方式也是控制端连接被控端，因使用端口复用技术，可以绕过防火墙的阻挡。  
+端口重用是说当一个服务端已经断开连接后，会进入到TIME_WAIT状态，只有等待TIME_WAIT结束后，才能重新使用该端口进行绑定，但通过 setsockopt函数可以立即重用该端口。
 
 __setsockopt 函数__  
 
@@ -44,14 +44,22 @@ SO_REUSEADDR可以用在以下四种情况下。(摘自《Unix网络编程》卷
 * 4、SO_REUSEADDR允许完全相同的地址和端口的重复绑定。但这只用于UDP的多播，不用于TCP。
 
 
-如果要重用的端口设置了 SO_EXCLUSIVEADDRUSE 之类的东西就无法使用这招，在 bind 的时候会碰到 10013 的错误。
-
-
 ### 0x02 程序  
 
 	/**	 * Description: This is "Port Reuse"'s server.	 * Author: xx	 * Time: 2017.2.22	 * Version: 0.1	 */	#include <iostream>	#include "winsock2.h"	#pragma comment(lib, "ws2_32.lib")	using namespace std;	int main(int argc, char* argv[]) {		const int bufSize = 64;		WSADATA wsaData;		SOCKET sServer;		bool value = true;		SOCKET sClient;		SOCKADDR_IN sockServ;		char revBuf[bufSize];		char sendBuf[bufSize];		int retVal = 0;			if(WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {			cout << "WSAStartup failed" << endl;			system("pause");			return -1;		}		if(LOBYTE(wsaData.wVersion) != 2 || HIBYTE(wsaData.wVersion) != 2) {			cout << "version isn't 2.2" << endl;			WSACleanup();			system("pause");			return -1;		}		sServer = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);		if(sServer == INVALID_SOCKET) {			cout << "create socket failed" << endl;			WSACleanup();			system("pause");			return -1;		}	//set socket that can reuse		retVal = setsockopt(sServer, SOL_SOCKET, SO_REUSEADDR, (char*)&value, sizeof(value));		if(retVal != 0) {			cout << "setsockopt failed" << endl;			closesocket(sServer);			WSACleanup();			system("pause");			return -1;		}		sockServ.sin_family = AF_INET;		sockServ.sin_port = htons(7777);		sockServ.sin_addr.S_un.S_addr = inet_addr("10.211.55.5");		retVal = bind(sServer, (struct sockaddr *)&sockServ, sizeof(sockServ));		if(retVal == SOCKET_ERROR) {			cout << "bind failed" << endl;			closesocket(sServer);			WSACleanup();			system("pause");			return -1;		}		cout << "Listen......." << endl;		retVal = listen(sServer, 5);		if(retVal == SOCKET_ERROR) {			cout << "listen failed" << endl;			closesocket(sServer);			WSACleanup();			system("pause");			return -1;		}		int addrLen = sizeof(sockServ);		sClient = accept(sServer, (struct sockaddr*)&sockServ, &addrLen);		if(sClient == INVALID_SOCKET) {			cout << "accept failed" << endl;			closesocket(sServer);			WSACleanup();			system("pause");			return -1;		}			cout << "linked" << endl;		send(sClient, "Yeah, This is Server.", 21, 0);			system("pause");		return 0;	}
 
 
+### winsock的多重绑定
+在winsock的实现中，对于服务器的绑定是可以多重绑定的，在确定多重绑定使用谁的时候，根据一条原则是谁的指定最明确则将包递交给谁，而且没有权限之分，也就是说低级权限的用户是可以重绑定在高级权限如服务启动的端口上的,这是非常重大的一个安全隐患。 
+
+这样的话，一个木马绑定到一个已经合法存在的端口上进行端口的隐藏，他通过自己特定的包格式判断是不是自己的包，如果是自己处理，如果不是通过127.0.0.1的地址交给真正的服务器应用进行处理。 从而达到端口隐藏的效果。
+
+解决的方法很简单，在编写如上应用的时候，绑定前需要使用setsockopt指定SO_EXCLUSIVEADDRUSE要求独占所有的端口地址，而不允许复用。这样其它人就无法复用这个端口了。在 bind 的时候会碰到 10013 的错误。
+
+
+#### 程序
+
+	==
 
 
 </br>
@@ -60,6 +68,7 @@ SO_REUSEADDR可以用在以下四种情况下。(摘自《Unix网络编程》卷
 References:  
 sina.\_BruceWong的博客:  <http://blog.sina.com.cn/s/blog_6347780c0102vis7.html>  
 Lellansin:  <http://www.lellansin.com/木马，你好！（五）端口重用.html>  
+CSDN.The Pursuit Of Heaven:  <http://blog.csdn.net/menghaibin2009/article/details/12514435>  
 </br>
 Author: xx  
-Time: 2017.2.21
+Time: 2017.4.14

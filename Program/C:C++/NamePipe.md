@@ -57,6 +57,7 @@ __注意一些限制__
 	/**	 * Description: This is NamedPipe's client.	 * Author: xx	 * Time: 2017.2.24	 * Version: 0.1	 */	#include <iostream>	#include <windows.h>	using namespace std;	const char* pipeNameStr = "\\\\John-PC\\pipe\\pipeName_xx";	int main(int argc, char* argv[]) {		//start wait Named pipe		if(WaitNamedPipe(pipeNameStr, NMPWAIT_WAIT_FOREVER) == false) {			cout << "WaitNamedPipe Failed" << endl;			system("pause");			return -1;		}		//open Named pipe		HANDLE hPipe = CreateFile(pipeNameStr, GENERIC_READ | GENERIC_WRITE, 0,          NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);		//Receive message from server		const int bufSize = 256;		char buffer[bufSize];		DWORD dwLen = 0;		ReadFile(hPipe, buffer, bufSize, &dwLen, NULL);		cout << buffer << endl;		ReadFile(hPipe, buffer, bufSize, &dwLen, NULL);		cout << buffer << endl;		CloseHandle(hPipe);		system("pause");		return 0;	}
 
 
+在windows下，使用命名管道进行访问时，使用的是windows的RPC服务，端口135。
 
 
 </br>

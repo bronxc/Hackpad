@@ -1,0 +1,10 @@
+coin1  nc pwnable.kr 9007
+
+[Server] N=4 C=2 	# find counterfeit among 4 coins with 2 trial
+	[Client] 0 1 		# weigh first and second coin
+	[Server] 20			# scale result : 20
+	[Client] 3			# weigh fourth coin
+	[Server] 10			# scale result : 10
+	[Client] 2 			# counterfeit coin is third!
+	[Server] Correct!
+

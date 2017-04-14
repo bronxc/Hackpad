@@ -37,6 +37,7 @@
 |NFS      |   2049  |
 |Mysql	   |  3306  |
 |Windows远程|  3389 |
+|SVN	|	3690	|
 |Metasploit|  3790  |
 |QQ       |   4000 | QQ默认端口   |
 |SysBase   |  4100 | listen port  |
@@ -56,6 +57,7 @@
 |Oracle   |   8080  | Oracle XDB数据库|
 |JBoss     |  8080  |1098/1099/4444/4445/8080/8009/8083/8093|
 |Nessus	   |  8834  |
+|Git		| 9418	|
 |MongoDB  |  27017 |
 
 
