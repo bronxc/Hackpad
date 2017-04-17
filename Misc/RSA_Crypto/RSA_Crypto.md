@@ -352,8 +352,9 @@ __(2)m与n不是互质关系。__
 原式得到证明。
 
 
-</br></br>
--------------
-参考文献：
-RSA算法原理(一)阮一峰的网络日志  <http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html>
+</br></br>  
+
+---------------------------------
+参考文献：  
+RSA算法原理(一)阮一峰的网络日志  <http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html>  
 RSA算法原理(一)阮一峰的网络日志  <http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html>
