@@ -1,0 +1,7 @@
+Mon May  8 18:44:04 2017 127.0.0.1 POST www/color.cgi HTTP/1.1 color=yellow
+Mon May  8 18:44:13 2017 127.0.0.1 GET www/index.html HTTP/1.1 
+Mon May  8 18:44:13 2017 127.0.0.1 GET www/favicon.ico HTTP/1.1 
+Mon May  8 18:44:17 2017 127.0.0.1 POST www/color.cgi HTTP/1.1 color=yellow
+Mon May  8 18:44:23 2017 127.0.0.1 POST www/color.cgi HTTP/1.1 color=blue
+Mon May  8 18:44:50 2017 127.0.0.1 GET www/color.cgi HTTP/1.1 
+Mon May  8 18:44:55 2017 127.0.0.1 POST www/color.cgi HTTP/1.1 color=lightgreen
