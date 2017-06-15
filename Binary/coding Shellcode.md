@@ -142,7 +142,7 @@ shellcode是一段代码，是一段机器可以执行的二进制(opcode)，当
 	}
 
 执行效果：  
-（这里编译的时候加上 `-z execstack` 让栈上可执行，我们的shellcode的起始位置是`main`的返回地址的位置，位于栈上）
+（这里编译的时候加上 `-z execstack` 让栈上可执行，我们的shellcode的起始位置是`main`的返回地址的位置，位于栈上（全局变量区））
 
 	# gcc 4.c -z execstack -o xx 
 	# ./xx 
