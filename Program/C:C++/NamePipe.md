@@ -40,7 +40,7 @@ __降低安全描述符(DACL)权限__
 
 __注意一些限制__
 
-1. 要开启guest账户。(
+1. 要开启guest账户。(或者：<https://support.microsoft.com/en-us/help/813414/how-to-create-an-anonymous-pipe-that-gives-access-to-everyone>  
 2. 要关掉防火墙。
 3. 组策略-》windows设置-》安全设置-》本地策略-》用户权限分配-》拒绝从网络访问这台计算机；删掉guest用户。
 4. 管道路径只能用服务端的计算机名字(域名)不能用IP地址，所以需要手动修改客户端的host文件。
