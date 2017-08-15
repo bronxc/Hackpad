@@ -95,6 +95,8 @@ __recv()__
 
 
 ### 0x02 程序 
+一个 TCP 的实例：
+
 Server端：  
 
 	/**
@@ -107,6 +109,7 @@ Server端：
 	#include <stdio.h>
 	#include <string.h>
 	#include <sys/socket.h>
+	#include <arpa/inet.h>
 	#include <netinet/in.h>
 	#include <sys/types.h>
 
@@ -173,6 +176,7 @@ Client端：
 	#include <string.h>
 	#include <sys/socket.h>
 	#include <netinet/in.h>
+	#include <arpa/inet.h>
 	#include <sys/types.h>
 
 	int main(int argc, char* argv[]) {
